@@ -1,0 +1,36 @@
+<mat-card>Ingrese los datos del Medico</mat-card>
+
+<form class="example-container" [formGroup]="form" #frmMedico="ngForm" (ngSubmit)="operar()">
+
+    <div [hidden]="true">
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="ID" required formControlName="id">
+        </mat-form-field>
+    </div>
+
+    <mat-form-field class="example-full-width">
+        <input type="text" matInput placeholder="Nombres" minlength="3" required formControlName="nombres">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <input type="text" matInput placeholder="Apellidos" required formControlName="apellidos">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <input type="text" matInput placeholder="cmp" required formControlName="cmp">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <input type="text" matInput placeholder="URL FOTO" required formControlName="fotoUrl">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="frmMedico.invalid">
+        <mat-icon>done</mat-icon>
+        <span>Aceptar</span>
+    </button>
+    <button mat-raised-button color="accent" type="button" (click)="cerrarModal()">
+        <mat-icon>close</mat-icon>
+        <span>Cancelar</span>
+    </button>
+
+</form>

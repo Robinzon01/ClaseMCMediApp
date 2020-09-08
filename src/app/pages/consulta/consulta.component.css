@@ -1,0 +1,17 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.example-container>* {
+    width: 100%;
+}
+
+.invalido {
+    color: brown;
+}
+
+.example-additional-selection {
+    font-size: 0.75em;
+    border: 100px;
+}
