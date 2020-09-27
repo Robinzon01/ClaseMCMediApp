@@ -1,3 +1,4 @@
+import { ConsultaEspecialComponent } from './pages/consulta/consulta-especial/consulta-especial.component';
 import { ConsultaComponent } from './pages/consulta/consulta.component';
 import { EspecialidadComponent } from './pages/especialidad/especialidad.component';
 import { ExamenComponent } from './pages/examen/examen.component';
@@ -24,9 +25,8 @@ const routes: Routes = [
   {
     path:'especialidad', component: EspecialidadComponent
   },
-  {
-    path:'consulta', component: ConsultaComponent
-  },
+  {path:'consulta', component: ConsultaComponent},
+  {path:'consulta-especial', component: ConsultaEspecialComponent},
   {path:'medico', component: MedicoComponent,
     children:[
       {path:"", component: MedicoListaComponent},

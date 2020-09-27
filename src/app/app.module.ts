@@ -18,6 +18,7 @@ import { EspecialidadComponent } from './pages/especialidad/especialidad.compone
 import { EspeEdicComponent } from './pages/especialidad/espe-edic/espe-edic.component';
 import { ConsultaComponent } from './pages/consulta/consulta.component';
 import {FormsModule} from '@angular/forms';
+import { ConsultaEspecialComponent } from './pages/consulta/consulta-especial/consulta-especial.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {FormsModule} from '@angular/forms';
     ExamenEdicionComponent,
     EspecialidadComponent,
     EspeEdicComponent,
-    ConsultaComponent
+    ConsultaComponent,
+    ConsultaEspecialComponent
   ],
   imports: [
     BrowserModule,
